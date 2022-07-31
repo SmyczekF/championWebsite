@@ -18,7 +18,7 @@
                     <h2>od matematyki do angielskiego</h2>
                     <h4>Zapisz się na zajęcia <strong>w Boguszowicach lub Świerklanach</strong></h4>
                     <a href="<?php bloginfo('url'); ?>/zapisz" class="button">zapisuję się</a>
-                </div>
+				</div>
             </div>
         </div>
     </section>

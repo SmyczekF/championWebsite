@@ -1,0 +1,37 @@
+<h2>zapisy na zajęcia</h2>
+
+<h5>wypełnij formularz, abyśmy mogli zaprosić Cię na zajęcia</h5>
+<br/>
+[radio radio-552 use_label_element "nowy uczeń" "kontynuacja"]
+
+
+    [text* your-name placeholder "imię i nazwisko"] 
+
+
+    [text data-urodzenia placeholder "data urodzenia"]
+
+
+    [text* telefon placeholder "telefon"]
+
+  
+    [email* your-email placeholder "e-mail"]
+
+[textarea textarea-609 42x3 placeholder "uwagi"]
+
+DODAJ PLAN LEKCJI:
+[file file-841 placeholder "dodaj plan lekcji"]
+
+wybierz interesujące Cię zajęcia
+[checkbox checkbox-212 "angielski" "Teddy Eddie Świerklany" "niemiecki" "matematyka" "inne"]
+
+miejsce
+[checkbox checkbox-290 "Boguszowice Akademia" "Świerklany GOKiR"]
+
+system płatności
+[radio radio-315 default:1 "raty" "całość"]
+
+[acceptance acceptance-477 required] Wyrażam zgodę na przetwarzanie moich danych osobowych i danych osobowych mojego dziecka podanych w niniejszym formularzu w celu złożenia deklaracji zapisu/deklaracji kontynuacji nauki oraz związanego z tą deklaracją dalszego procesu zawarcia/kontynuacji  umowy o przeprowadzenie kursu nauki.  Wiem, że powyższa zgoda jest dobrowolna, ale konieczna do złożenia niniejszej deklaracji oraz udziału w dalszym procesie związanym z zawarciem/kontynuacją umowy o przeprowadzenie kursu w wybranej przeze mnie filii szkoły językowej prowadzonej przez Akademię Językową Champion.  Informacje o administratorze oraz o zasadach przetwarzania danych osobowych: Administratorem danych jest Akademia Językowa Champion Sylwia Smyczek. [/acceptance]
+
+[submit "Wyślij"]
+
+

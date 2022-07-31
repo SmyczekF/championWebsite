@@ -1,0 +1,14 @@
+[text* your-name placeholder "imię i nazwisko"]
+
+    [email* your-email placeholder "e-mail"] 
+
+
+    [text your-subject placeholder "nauczany przedmiot"] 
+
+[textarea textarea-315 42x3 placeholder "napisz wiadomość"]
+
+[file file-6]
+
+[acceptance acceptance-989 required] zgoda na przetwarzanie danych osobowych w celu obecnej rekrutacji [/acceptance]
+
+[submit "Wyślij"]

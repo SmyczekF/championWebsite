@@ -1,0 +1,8 @@
+[text* your-name placeholder "Imię i nazwisko"]
+
+
+    [email* your-email placeholder "e-mail"]
+
+    [textarea your-message placeholder "tekst"] 
+
+[submit "Wyślij zapytanie"]
