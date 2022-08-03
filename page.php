@@ -1,12 +1,11 @@
 <?php get_header(); ?>
 
 <?php if( is_page( 'home' ) ) { ?>
-
     <section class="container my-5 twoja-szkola">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-10">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/dzieci.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
-                <div class="p-4 text-center info">
+                <img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/dzieci.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
+                <div class="p-4 text-center info" style="border-radius: 50px;">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/united-kingdom.png" alt="nauka języka angielskiego" />
                         <img src="<?php echo get_template_directory_uri(); ?>/img/germany.png" alt="nauka języka niemieckiego" />
@@ -17,7 +16,7 @@
                     <h1>Z nami nauczysz się wszystkiego</h1>
                     <h2>od matematyki do angielskiego</h2>
                     <h4>Zapisz się na zajęcia <strong>w Boguszowicach lub Świerklanach</strong></h4>
-                    <a href="<?php bloginfo('url'); ?>/zapisz" class="button">zapisuję się</a>
+                    <a href="<?php bloginfo('url'); ?>/zapisz" class="button" style="font-weight: bold;">zapisuję się</a>
 				</div>
             </div>
         </div>
@@ -75,11 +74,11 @@
             <div class="col-12 my-3">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/onas-1.jpg" alt="Teddy Eddie Żory" class="img-fluid" />
+                        <img style="border-radius:50px;"src=" <?php echo get_template_directory_uri(); ?>/img/onas-1.jpg" alt="Teddy Eddie Żory" class="img-fluid" />
                         <!-- <div class="d-none d-lg-block mt-4 orange"></div> -->
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/onas-2.jpg" alt="Teddy Eddie Rybnik" class="img-fluid" />
+                        <img style="border-radius:50px;" src="<?php echo get_template_directory_uri(); ?>/img/onas-2.jpg" alt="Teddy Eddie Rybnik" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -96,9 +95,9 @@
                 Postępy uczniów są regularnie monitorowane, a dwa razy w roku rodzice otrzymują szczegółowe raporty.
                 Grupy tworzone są na podstawie wieku i oceny z testu wstępnego lub końcoworocznego. Gwarantuje to jednolity poziom grupy.
             </div>
-            <div class="col-12 col-md-6 mt-4">
-                <h3>Aktualności: zobacz co u nas słychać</h3>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakademiajezykowachampion%2F&tabs=timeline&width=340&height=640&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=151064878872589" width="100%" height="640" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            <div class="col-12 col-md-6 mt-4" style="height: 700px;">
+                <h3 style="margin-top: 50px;">Aktualności - Zobacz co u nas słychać:</h3>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakademiajezykowachampion%2F&tabs=timeline&width=340&height=640&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=151064878872589" width="100%" height="640" style="position: absolute; left: 15%; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
     </section>
@@ -124,8 +123,8 @@
                 <strong>Świerklany - Teddy Eddie dla najmłodszych</strong>
             </div>
             <div class="col-12 text-center mt-5">
-                <h2 class="mb-4">zobacz nasz plan zajęć</h2>
-                <a href="<?php bloginfo('url'); ?>/wp-content/uploads/plan-zajec.pdf" target="_blank" rel="noreferrer noopener"><strong>zajęcia >></strong></a>
+                <h2 class="mb-4">Zobacz nasz plan zajęć:</h2>
+                <a href="<?php bloginfo('url'); ?>/wp-content/uploads/plan-zajec.pdf" target="_blank" rel="noreferrer noopener" style="display: inline-block; margin-top: 20px; padding: 15px 50px; 						background-color: #f47205; color: #fff; border-radius: 30px; font-size: 1.1rem;"><strong>zajęcia</strong></a>
             </div>
         </div>
     </section>
@@ -144,7 +143,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/graduate.png" alt="absolwentów" />
-                    <h5>5k</h5>
+                    <h5>5 000</h5>
                     absolwentów
                 </div>
                 <div class="col-12 col-md-3">
@@ -154,7 +153,7 @@
                 </div>
                 <div class="col-12 col-md-3">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/pencil.png" alt="spawnych testów" />
-                    <h5>10k</h5>
+                    <h5>10 000</h5>
                     zdanych egzaminów
                 </div>
             </div>
@@ -209,7 +208,7 @@
     <section class="container klienci">
         <div class="row d-flex justify-content-center mb-5 whitebg">
             <div class="col-12 col-md-10 my-5">
-                <h3>co sądzą o nas nasi klienci</h3>
+                <h3>Co sądzą o nas nasi klienci?</h3>
             </div>
             <?php
             $posts = get_posts( array( 'post_type' => 'reviews' ) );
@@ -221,7 +220,8 @@
                     $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                     $image = $image[0];
                 else:
-                    $image = 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==';
+                    $image = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABmJLR0QA/wD/AP+gvaeTAAADZElEQVR4nO3azYscRRjH8c9sxiCSGIWQmBgPCoqCr9GjkIAYQ0S9KiiKHsSjMUQPURD0aEzwrpcY/wC9qyfRhDViRBHEw27WxHeSKFk1ux5qhqluZrLtdlfPDNYXmm16t3/PU11VTz311JLJZDKZTCaTyWQy/0M6Y7K5HTdjU+/Zj/gan2N5DD61wjU4hFNCI4ddp/AmNo/JxyR0sB/njW54+TqHfVoYoakNXI538Gjp+Wl8hIWeD1uwUxglMe/haVxI62YaOkID4p49jl2YGfL3M3gAs6V3jhpPrKrNfsWGHMSaCu91hVgRv/tCIh+TsQlnDRrwxio0DivGhPL0mGjiHjyuWs+X6SpOh4ONeZeYjuJSt6uG1u5IZ96UxIJ7DJxeMDzgVWVGWDH6ettrezfEQNPcFN1/jKUaWks9jWHajZDiA2yN7ucb0JuL7q9tQK9Aig8Q5/JNzNlYo/F9QooPsBDdN9Fj20ZoTyx3GwStH9QPgmcivbtqe9cC5WVwdw2tPZHOnClZBglb2r7js0JS81/p4oR62eTYKKfCh1ah8ZZiKjx1NYJ9ihuaw6qNhK5i45fxfCIfk9IRtrJxQ2aFmDBqO7xHcdgv44iEc7+NgsjbeKz0/IxBQYSwXO40qBH2OYpnTGlBpE9H2M+fU70kdlYY9lMT9auwWdjSzhvd8Dkh2pdHQjLGVRa/UyiL94scp/GNwfzPZDLt0HYMWIs7cD2uwtW957/hd3yPL/BXy34l5Ta8jmNYtPISuIjP8BpuHYO/jXCZcKJzUvW1f9T1JZ6yug3ViqSYAo/jVdww5HfL+BZf4Wdh6BOmwkahx28c4dd3eEXIDieSrfjA8IPOI3gIGyrobMDDeNfw7PF94Sxxorgfvyo6+hNexLoauuvwUk8r1v4F99XQbZQnhajdd+6isPWt0/Ay63uaFyM7i3iiQRur4jmhdh/n8jsS2tvRs9G3t4RnE9q7JA/i78iZk7iuBbtbFM8M/8EjLdgtcLvif3wcUy3ANcWV+DSyf17IN1qhK5z4xoeW2y75Rho2Cktq348TQv6RnAOR0QvCaBgXt+DPyJ8DqQ3O4I/I4MupDVZgr+JUSHHaVaA/9z7R0pBbgTX40CAWJecK3Nv7OSmsFZbI9eN2JJPJZDKZTGZq+Bdm5CUT9UsydAAAAABJRU5ErkJggg==
+';
                 endif;
                 echo '<img class="rounded-circle" src="' . $image . '" alt="Generic placeholder image" width="60" height="60">';
                 echo '</div>';
@@ -483,7 +483,6 @@
 				</h2>
 			</div>
 			<div class="col-12 text-center pobierz-cennik" style="margin-bottom: 30px;">
-<!-- 			<a href="<?php bloginfo('url'); ?>/wp-content/uploads/cennik.pdf">pobierz szczegółowy cennik</a> -->
 				<object data="<?php bloginfo('url'); ?>/wp-content/uploads/cennik.pdf#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="80%" height=1135px>
 				  <a href="<?php bloginfo('url'); ?>/wp-content/uploads/cennik.pdf">pobierz szczegółowy cennik</a>
 				</object>
@@ -594,8 +593,15 @@
 <?php } ?>
 
 <?php if ( is_page( 'plan-zajec-2' ) ) { ?>
-    <div class="container page">
-        <iframe src='https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495' width='100%' height='650px'></iframe>
+    <div class="container page" style="height: 50rem; position: relative;">
+<!--         <iframe src='https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495' width='100%' height='650px'>
+			Jesteśmy w fazie przygotowywania nowego planu.
+		</iframe> -->
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=650px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
+				Jesteśmy w trakcie przygotowywania nowego planu zajęć.
+			</h1>
+		</object>
     </div>
     <?php } ?>
 
@@ -603,14 +609,14 @@
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-        <div class="container page whitebg mb-5">
+        <div class="container page whitebg mb-5" style="height: 750px;">
             <div class="row d-flex justify-content-center">
                 <div class="col-8 mb-5">
                     <h2>kariera</h2>
                     <h5>Chcesz być częścią naszego zespołu? Aplikuj! Poszukujemy nauczycieli języków obcych i matematyki.</h5>
                 </div>
                 <div class="col-12 col-md-6 ">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/kariera.jpg" class="img-fluid" alt="kariera" />
+                    <img style="border-radius: 50px;"src="<?php echo get_template_directory_uri(); ?>/img/kariera.jpg" class="img-fluid" alt="kariera" />
                 </div>
                 <div class="col-12 col-md-6">
                     <?php the_content(); ?>
