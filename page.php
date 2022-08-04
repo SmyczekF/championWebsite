@@ -97,7 +97,7 @@
             </div>
             <div class="col-12 col-md-6 mt-4" style="height: 700px;">
                 <h3 style="margin-top: 50px;">Aktualności - Zobacz co u nas słychać:</h3>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakademiajezykowachampion%2F&tabs=timeline&width=340&height=640&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=151064878872589" width="100%" height="640" style="position: absolute; left: 15%; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakademiajezykowachampion%2F&tabs=timeline&width=340&height=640&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=151064878872589" width=100% height="640" style="margin: 0; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </div>
         </div>
     </section>
@@ -609,16 +609,16 @@
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-        <div class="container page whitebg mb-5" style="height: 750px;">
-            <div class="row d-flex justify-content-center">
+        <div class="container page whitebg mb-5" style="height: 1000px;">
+            <div class="row d-flex justify-content-center" style="display: block;">
                 <div class="col-8 mb-5">
                     <h2>kariera</h2>
                     <h5>Chcesz być częścią naszego zespołu? Aplikuj! Poszukujemy nauczycieli języków obcych i matematyki.</h5>
                 </div>
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-6">
                     <img style="border-radius: 50px;"src="<?php echo get_template_directory_uri(); ?>/img/kariera.jpg" class="img-fluid" alt="kariera" />
                 </div>
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6" style="margin-left: 0">
                     <?php the_content(); ?>
                 </div>
             </div>
