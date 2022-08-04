@@ -19,7 +19,7 @@
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>/">
             <img src="<?php echo get_template_directory_uri(); ?>/img/champion-scholl.png" alt="Szkoła Językowa"/>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
@@ -31,7 +31,7 @@
                 </li>
                 <li class="nav-item dropdown" >
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="tab" aria-haspopup="true" aria-expanded="false" >
-                        zajęcia
+                        zajęcia 
                     </a>
                     <div class="dropdown-menu mt-0" aria-labelledby="navbarDropdown">
  
