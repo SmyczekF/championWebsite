@@ -88,14 +88,19 @@
 <!--                    <a class="nav-link" href="--><?php //bloginfo('url'); ?><!--/blog">blog</a>-->
 <!--                </li>-->
                 <li class="nav-item">
-                    <a class="nav-link" href="<?php bloginfo('url'); ?>/kariera">kariera</a>
+                    <a class="nav-link" href="<?php bloginfo('url'); ?>/kariera-champion">kariera</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/kontakt">kontakt</a>
                 </li>
+				
+			<!--	<li class="nav-item">
+                    <a class="nav-link" href="<?php bloginfo('url'); ?>/travel">champion travel</a>
+                </li>	-->
                 <li class="nav-item zapiszsie">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/zapisz">zapisuję się</a>
                 </li>
+				
                 <li class="nav-item fb">
                     <a class="nav-link" href="https://www.facebook.com/akademiajezykowachampion/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="Champion School at Facebook"/></a>
                 </li>

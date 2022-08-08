@@ -5,7 +5,7 @@
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-10">
                 <img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/dzieci.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
-                <div class="p-4 text-center info" style="border-radius: 50px;">
+                <div class="p-4 text-center info zapiszsie" style="border-radius: 50px;">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/united-kingdom.png" alt="nauka języka angielskiego" />
                         <img src="<?php echo get_template_directory_uri(); ?>/img/germany.png" alt="nauka języka niemieckiego" />
@@ -15,8 +15,8 @@
                     </div>
                     <h1>Z nami nauczysz się wszystkiego</h1>
                     <h2>od matematyki do angielskiego</h2>
-                    <h4>Zapisz się na zajęcia <strong>w Boguszowicach lub Świerklanach</strong></h4>
-                    <a href="<?php bloginfo('url'); ?>/zapisz" class="button" style="font-weight: bold;">zapisuję się</a>
+                    <h4 style="margin-bottom: 30px;">Zapisz się na zajęcia <strong>w Boguszowicach lub Świerklanach</strong></h4>
+                    <a href="<?php bloginfo('url'); ?>/zapisz" style="font-weight: bold;text-decoration: none;">zapisuję się</a>
 				</div>
             </div>
         </div>
@@ -122,9 +122,9 @@
                 <a href="<?php echo bloginfo('url'); ?>/teddy-eddie/"><img src="<?php echo get_template_directory_uri(); ?>/img/teddy-eddie.jpg" alt="Teddy Eddie dla najmłodszych dzieci" class="img-fluid" /></a>
                 <strong>Świerklany - Teddy Eddie dla najmłodszych</strong>
             </div>
-            <div class="col-12 text-center mt-5">
+            <div class="col-12 text-center mt-5 zapiszsie">
                 <h2 class="mb-4">Zobacz nasz plan zajęć:</h2>
-                <a href="<?php bloginfo('url'); ?>/wp-content/uploads/plan-zajec.pdf" target="_blank" rel="noreferrer noopener" style="display: inline-block; margin-top: 20px; padding: 15px 50px; 						background-color: #f47205; color: #fff; border-radius: 30px; font-size: 1.1rem;"><strong>zajęcia</strong></a>
+                <a href="<?php bloginfo('url'); ?>/wp-content/uploads/plan-zajec.pdf" target="_blank" rel="noreferrer noopener" style="text-decoration: none; font-weight: normal"><strong>zajęcia</strong></a>
             </div>
         </div>
     </section>
@@ -390,10 +390,10 @@
             <div class="col-12 col-md-10 dzieci">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/teddy-eddy-zory.jpg" alt="Teddy Eddie Żory" class="img-fluid" />
+                        <img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/teddy-eddy-zory.jpg" alt="Teddy Eddie Żory" class="img-fluid" />
                     </div>
                     <div class="col-12 col-md-6">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/teddy-eddy-rybnik.jpg" alt="Teddy Eddie Rybnik" class="img-fluid" />
+                        <img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/teddy-eddy-rybnik.jpg" alt="Teddy Eddie Rybnik" class="img-fluid" />
                     </div>
                 </div>
             </div>
@@ -460,8 +460,8 @@
                     <li> dzieci uczą się SŁOWNICTWA W KONTEKŚCIE ZDAŃ, TEKSTÓW I SYTUACJI, a nie jako serii pojedynczych słówek</li>
                 </ul>
             </div>
-            <div class="col-12 text-center">
-                <a href="<?php bloginfo('url'); ?>/wp-content/uploads/cennik-teddy.pdf"><strong>cennik zajęć >></strong></a>
+            <div class="col-12 text-center zapiszsie">
+                <a style="text-decoration: none; font-weight: normal" href="<?php bloginfo('url'); ?>/wp-content/uploads/cennik-teddy.pdf"><strong>cennik zajęć</strong></a>
             </div>
         </div>
     </section>
@@ -609,19 +609,13 @@
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-        <div class="container page whitebg mb-5" style="height: 1000px;">
-            <div class="row d-flex justify-content-center" style="display: block;">
-                <div class="col-8 mb-5">
-                    <h2>kariera</h2>
-                    <h5>Chcesz być częścią naszego zespołu? Aplikuj! Poszukujemy nauczycieli języków obcych i matematyki.</h5>
-                </div>
-                <div class="col-12 col-md-6">
-                    <img style="border-radius: 50px;"src="<?php echo get_template_directory_uri(); ?>/img/kariera.jpg" class="img-fluid" alt="kariera" />
-                </div>
-                <div class="col-12 col-md-6" style="margin-left: 0">
-                    <?php the_content(); ?>
-                </div>
-            </div>
+        <div class="container page whitebg mb-5" >
+           
+             
+               
+					<p><?php the_content(); ?></p>
+                
+           
         </div>
 
 
