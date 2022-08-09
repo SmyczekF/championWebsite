@@ -23,7 +23,7 @@
             <div class="col-4 col-sm-2">
                 <ul>
 <!--                    <li><a href="--><?php //bloginfo('url'); ?><!--/blog">blog</a></li>-->
-                    <li><a href="<?php bloginfo('url'); ?>/kariera">kariera</a></li>
+                    <li><a href="<?php bloginfo('url'); ?>/kariera-champion">kariera</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/kontakt">kontakt</a></li>
                     <li><a href="<?php bloginfo('url'); ?>/cennik">cennik</a></li>
                 </ul>

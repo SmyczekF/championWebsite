@@ -14,8 +14,8 @@
                         <img src="<?php echo get_template_directory_uri(); ?>/img/calculator.png" alt="nauka matematyki" />
                     </div>
                     <h1>Z nami nauczysz się wszystkiego</h1>
-                    <h2>od matematyki do angielskiego</h2>
-                    <h4 style="margin-bottom: 30px;">Zapisz się na zajęcia <strong>w Boguszowicach lub Świerklanach</strong></h4>
+                    <h2 style="margin-bottom: 20px;">od matematyki do angielskiego.</h2>
+                    <h4 style="margin-bottom: 30px;">Zapisz się na zajęcia w Boguszowicach lub Świerklanach.</h4>
                     <a href="<?php bloginfo('url'); ?>/zapisz" style="font-weight: bold;text-decoration: none;">zapisuję się</a>
 				</div>
             </div>
@@ -25,7 +25,7 @@
     <section class="container my-5 uczymy">
         <div class="row d-flex justify-content-center text-center whitebg">
             <div class="col-12 col-md-8 my-4">
-                <h2>uczymy na różnych poziomach zaawansowania dzieci od 2 lat, młodzież i dorosłych</h2>
+                <h2>Uczymy na różnych poziomach zaawansowania: dzieci od 2 lat, młodzież i dorosłych.</h2>
             </div>
             <div class="col-12 col-md-6">
 
@@ -69,7 +69,7 @@
     <section class="container my-5 o-nas">
         <div class="row d-flex justify-content-center whitebg">
             <div class="col-12">
-                <h3>o nas</h3>
+                <h3>O nas:</h3>
             </div>
             <div class="col-12 my-3">
                 <div class="row">
@@ -95,9 +95,11 @@
                 Postępy uczniów są regularnie monitorowane, a dwa razy w roku rodzice otrzymują szczegółowe raporty.
                 Grupy tworzone są na podstawie wieku i oceny z testu wstępnego lub końcoworocznego. Gwarantuje to jednolity poziom grupy.
             </div>
-            <div class="col-12 col-md-6 mt-4" style="height: 700px;">
-                <h3 style="margin-top: 50px;">Aktualności - Zobacz co u nas słychać:</h3>
-                <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fakademiajezykowachampion%2F&tabs=timeline&width=340&height=640&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=151064878872589" width=100% height="640" style="margin: 0; overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+			<div id="fb-root"></div>
+				<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v14.0" nonce="LwIrQun9"></script>
+            <div class="col-12 col-md-6 mt-4"">
+                <h3 style="margin-top: 50px;">Aktualności - Zobacz co u nas słychać:</h3>                
+				<div class="fb-page" data-href="https://www.facebook.com/akademiajezykowachampion/" data-tabs="timeline" data-width="500" data-height="640" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/akademiajezykowachampion/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/akademiajezykowachampion/">Akademia Językowa Champion &amp; Akademia Matematyki PLUS</a></blockquote></div>																										  
             </div>
         </div>
     </section>
