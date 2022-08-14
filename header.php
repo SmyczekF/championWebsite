@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>/">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/champion-scholl.png" alt="Szkoła Językowa"/>
+            <img style="margin-right: -20px;"src="<?php echo get_template_directory_uri(); ?>/img/champion-scholl.png" alt="Szkoła Językowa"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="dropdown" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
