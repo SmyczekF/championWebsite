@@ -193,10 +193,12 @@
                             $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' );
                             $image = $image[0];
                         else:
-                            $image = 'data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==';
+							if(strcmp($post->post_name,"oliwia-woryna") == 0):
+                            	$image = "https://akademia-champion.pl/wp-content/uploads/Oliwia_Woryna.jpg";
+							endif;
                         endif;
                         echo '<a rel="' . $post->post_name . '" title="'. $post->post_title .'">';
-                        echo '<img class="img-fluid" src="' . $image . '" alt="'. $post->post_title .'" width="100%" />';
+                        echo '<img style="border-radius: 50px;" class="img-fluid" src="' . $image . '" alt="'. $post->post_title .'" width="100%" />';
                         echo '</a>';
                         echo '</div>';
                     }
