@@ -4,8 +4,10 @@
     <section class="container my-5 twoja-szkola">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-10">
-                <img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/dzieci.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
-                <div class="p-4 text-center info zapiszsie" style="border-radius: 50px;">
+				<a href="https://edubears.pl/" target="_blank">
+					<img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/dzieci_te.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
+				</a>
+                <div class="p-4 text-center info zapiszsie" style="border-radius: 50px; margin-top: -80px;">
                     <div>
                         <img src="<?php echo get_template_directory_uri(); ?>/img/united-kingdom.png" alt="nauka języka angielskiego" />
                         <img src="<?php echo get_template_directory_uri(); ?>/img/germany.png" alt="nauka języka niemieckiego" />
