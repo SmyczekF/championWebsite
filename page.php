@@ -4,7 +4,7 @@
     <section class="container my-5 twoja-szkola">
         <div class="row d-flex justify-content-center">
             <div class="col-12 col-md-10">
-				<a href="https://edubears.pl/" target="_blank">
+				<a href="<?php echo bloginfo('url'); ?>/teddy-eddie/">
 					<img style="border-radius: 50px;" src="<?php echo get_template_directory_uri(); ?>/img/dzieci_te.jpg" alt="uczymy dzieci mówić po angielsku" class="img-fluid" />
 				</a>
                 <div class="p-4 text-center info zapiszsie" style="border-radius: 50px; margin-top: -80px;">
