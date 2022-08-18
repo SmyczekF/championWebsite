@@ -14,7 +14,7 @@
 
     <a name="home"></a>
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top affix">
         <div class="container">
         <a class="navbar-brand" href="<?php bloginfo('url'); ?>/">
             <img style="margin-right: -20px;"src="<?php echo get_template_directory_uri(); ?>/img/champion-scholl.png" alt="Szkoła Językowa"/>
@@ -84,25 +84,32 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/cennik">cennik</a>
                 </li>
-<!--                <li class="nav-item">-->
-<!--                    <a class="nav-link" href="--><?php //bloginfo('url'); ?><!--/blog">blog</a>-->
-<!--                </li>-->
+<!-- 	           <li class="nav-item">
+                  <a class="nav-link" href="--><?php //bloginfo('url'); ?><!--/blog">blog</a>
+               </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/kariera-champion">kariera</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/kontakt">kontakt</a>
                 </li>
-				
-			<!--	<li class="nav-item">
-                    <a class="nav-link" href="<?php bloginfo('url'); ?>/travel">champion travel</a>
-                </li>	-->
+				<li class="nav-item">
+                  <a class="nav-link" href="https://app.kivo.pl/Login?returnUrl=%2FPayments%2FMain%2FAccessExpired" target="_blank">TEDDY EDDY</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="<?php bloginfo('url'); ?>/travel">travel</a>
+                </li>	
                 <li class="nav-item zapiszsie">
                     <a class="nav-link" href="<?php bloginfo('url'); ?>/zapisz">zapisuję się</a>
                 </li>
 				
                 <li class="nav-item fb">
                     <a class="nav-link" href="https://www.facebook.com/akademiajezykowachampion/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png" alt="Champion School at Facebook"/></a>
+                </li>
+				<li class="nav-item fb">
+                    <a class="nav-link" href="https://app.kivo.pl/Login?returnUrl=%2FPayments%2FMain%2FAccessExpired" target="_blank">
+						<img style="height:20px; width:60px;"src="<?php echo get_template_directory_uri(); ?>/img/kivo.png" alt="E-dziennik KIVO"/>
+					</a>
                 </li>
             </ul>
         </div>

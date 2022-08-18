@@ -168,7 +168,8 @@
     <section class="container my-5 lektorzy">
         <div class="row whitebg">
             <div class="col-12 col-md-6">
-                <h3>lektorzy</h3>
+                <h3>Nasza kadra</h3>
+				<h4>━━━━━━━━</h4>
                 <?php
                 $posts = get_posts( array( 'post_type' => 'lectors', 'posts_per_page' => 14, 'orderby' => 'date', 'order' => 'ASC' ) );
                 foreach ( $posts as $post ) {
@@ -384,7 +385,7 @@
     </section>
 
 <?php } ?>
-
+										  											  
 <?php if ( is_page( 'teddy-eddie' ) ) { ?>
 
 <div class="teddy-eddie">
@@ -478,7 +479,12 @@
 <?php if ( is_page( 'cennik' ) ) { ?>
 
 <div class="cennik">
-	<section class="container cennik-info">
+	<div class="container page" style="height: 0rem; position: relative;">
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+		</object>
+    </div>
+	<section class="container page cennik-info">
 		<div class="row whitebg">
 			<div class="col-12 my-5">
 				<h1 style="font-size: 30px; text-align: center;">
@@ -577,7 +583,11 @@
     <?php } ?>
 
 <?php if ( is_page( array('zapisz'))) { ?>
-
+	<div class="container page" style="height: 0rem; position: relative;">
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+		</object>
+    </div>
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
         <div class="container page">
@@ -600,17 +610,31 @@
 
 <?php if ( is_page( 'plan-zajec-2' ) ) { ?>
     <div class="container page" style="height: 50rem; position: relative;">
-<!--         <iframe src='https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495' width='100%' height='650px'>
-			Jesteśmy w fazie przygotowywania nowego planu.
-		</iframe> -->
 		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=650px>
 			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)">
 				Jesteśmy w trakcie przygotowywania nowego planu zajęć.
 			</h1>
 		</object>
     </div>
-    <?php } ?>
+<?php } ?>
 
+<?php if ( is_page( 'travel' ) ) { ?>
+    <div class="container page" style="height: 0rem; position: relative;">
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+		</object>
+    </div>
+<?php } ?>
+																																
+<?php if ( is_page( 'kariera-champion' ) ) { ?>
+    <div class="container page" style="height: 0rem; position: relative;">
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+		</object>
+    </div>
+<?php } ?>
+																																
+																																
 <?php if ( is_page( array('kariera'))) { ?>
 
     <?php if (have_posts()): while (have_posts()) : the_post(); ?>
@@ -619,9 +643,7 @@
            
              
                
-					<p><?php the_content(); ?></p>
-                
-           
+					<p><?php the_content(); ?></p>         
         </div>
 
 
