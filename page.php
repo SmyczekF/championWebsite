@@ -197,6 +197,9 @@
 							if(strcmp($post->post_name,"oliwia-woryna") == 0):
                             	$image = "https://akademia-champion.pl/wp-content/uploads/Oliwia_Woryna.jpg";
 							endif;
+							if(strcmp($post->post_name,"patrycja-wojcikowska") == 0):
+                            	$image = "https://akademia-champion.pl/wp-content/uploads/Patrycja.jpg";
+							endif;
                         endif;
                         echo '<a rel="' . $post->post_name . '" title="'. $post->post_title .'">';
                         echo '<img style="border-radius: 50px;" class="img-fluid" src="' . $image . '" alt="'. $post->post_title .'" width="100%" />';
@@ -626,18 +629,16 @@
     </div>
 <?php } ?>
 																																
-<?php if ( is_page( 'kariera-champion' ) ) { ?>
-    <div class="container page" style="height: 0rem; position: relative;">
+<?php if ( is_page( 'teddy-eddie-2' ) ) { ?>
+	<div class="container page" style="height: 0rem; position: relative;">
 		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
 			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
 		</object>
-    </div>
-<?php } ?>
+    </div> 																														
+<?php } ?>																																
 																																
-																																
-<?php if ( is_page( array('kariera'))) { ?>
-
-    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+<?php if ( is_page( 'kariera-champion' ) ) { ?>
+	    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
         <div class="container page whitebg mb-5" >
            
@@ -652,9 +653,19 @@
 
     <?php else: ?>
 
-    <?php endif; ?>
-
+    <?php endif; ?>																															
+    <div class="container page" style="height: 0rem; position: relative;">
+		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+		</object>
+    </div>
 <?php } ?>
+																																
+
+
+
+
+
 
 <?php if ( !is_page( array('home', 'zajecia', 'kontakt', 'teddy-eddie', 'cennik', 'zapisz', 'kariera', 'plan-zajec-2') ) ) { ?>
 
@@ -663,12 +674,18 @@
 <div class="container page">
     <div class="row">
         <div class="col-12 whitebg">
-            <h1><?php the_title(); ?></h1>
+			<?php if ( !is_page( array('teddy-eddie-2'))) { ?>
+				<h1><?php the_title(); ?></h1>
+			<?php } ?>	
             <?php the_content(); ?>
 
 
             <?php if ( is_page( array('filia-boguszowice', 'filia-swierklany') ) ) { ?>
-
+				<div class="container page" style="height: 0rem; position: relative;">
+					<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
+						<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
+					</object>
+    			</div>
                 <section class="zajecia">
                     <div class="container whitebg">
                         <div class="row">
