@@ -622,6 +622,22 @@
 <?php } ?>
 
 <?php if ( is_page( 'travel' ) ) { ?>
+	 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+        <div class="container page whitebg mb-5" >
+           
+             
+               
+					<p><?php the_content(); ?></p>         
+        </div>
+
+
+
+    <?php endwhile; ?>
+
+    <?php else: ?>
+
+    <?php endif; ?>
     <div class="container page" style="height: 0rem; position: relative;">
 		<object data="https://app.activenow.pl/external/calendar/1525?code=688d01192210788e3ca6fb3c172a1495" width="100%" height=0px>
 			<h1 style="margin: 0; position: absolute; top: 40%; left: 50%; margin-right: -50%; transform: translate(-50%, -50%)"></h1>
@@ -667,7 +683,7 @@
 
 
 
-<?php if ( !is_page( array('home', 'zajecia', 'kontakt', 'teddy-eddie', 'cennik', 'zapisz', 'kariera', 'plan-zajec-2') ) ) { ?>
+<?php if ( !is_page( array('home', 'zajecia', 'kontakt', 'teddy-eddie', 'cennik', 'zapisz', 'kariera', 'plan-zajec-2', 'travel') ) ) { ?>
 
 <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
